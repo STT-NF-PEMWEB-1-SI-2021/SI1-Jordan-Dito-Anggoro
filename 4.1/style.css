@@ -1,0 +1,42 @@
+div.a {
+    margin-left: 0px;
+}
+div.b{
+    float: right;
+    padding-top: 0.1px;
+    margin-right: 0.1px;
+}
+div.c{
+    margin-left: 1px;
+}
+div.td{
+    width: 250px;
+}
+div.tda{
+    font-size: xx-large;
+}
+#img2{
+    width: 25px;
+    height: 20px;
+}
+#img1 {
+    height: 250px;
+    width: 180px;
+    float: left;
+}
+#img3 {
+    height: 250px;
+    width: 250px;
+}
+#vid1 {
+    width: 250px;
+    height: 250px;
+}
+#fid1 {
+    width: 250px;
+    height: 250px;
+}
+
+#aa1{
+    font: xx-large;
+}
