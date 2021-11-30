@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.3</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #container {
+        background-color: rgb(80, 119, 22);
+        padding: 20px;
+    }
+    #container > header {
+        margin-bottom: 15px;
+    }
+    #container > footer {
+        margin-top: 15px;
+    }
+    #content {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    #content>article {
+        background: rgb(121, 228, 121);
+        flex: 1;
+        order: 2;
+        width: 40px;
+        margin-left: 15px;
+        height: 31vw;
+    }
+    img {
+        width: 20%;
+        height: auto;
+        margin-left: 3px;
+        margin-top: 3cm;
+    }
+    #content > aside {
+        background:lawngreen;
+        flex: 0 0 15vw;
+        order: 1;
+        margin-right: 10px;
+        height: 31vw;
+    }
+    header, footer {
+        background:lightgreen;
+        height: 10vh;
+    }
+    header, footer, article, aside {
+        color:rgb(5, 77, 5);
+        padding: 1em;
+        font-size: 15px;
+        text-align: center;
+        
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>Header</header>
+        <div id="content">
+            <article><p>Article</p>
+            <img src="g8">
+            <img src="g8">
+            <img src="g8">
+            </article>
+            <aside>Aside</aside>
+        </div>
+            <footer>Footer</footer>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.2 Jordan Dito Anggoro</title>
+    <style>
+ 
+ * {
+box-sizing: border-box; 
+}
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+margin: 0;
+}
+#main {
+display: flex;
+flex: 1;
+}
+
+#main > article {
+flex: 1;
+order: 2;
+display: flex;
+width: 15vw;
+height: 32.4vw;
+
+margin-left: 5em;
+background-color: linen;
+}
+
+#main > aside {
+background: pink;
+order: 3;
+flex: 0 0 18vw;
+}
+header, footer {
+background: khaki;
+height: 15vh;
+width: 89.5vw;
+
+margin-left: 5em;
+
+}
+header, footer, article, nav, aside {
+padding: 1em;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">    
+        <div>
+            <nav><b>Nav</b></nav>
+        </div>
+    
+    <div id="content">
+        <header><b>Header</b></header>
+    <div id="main">
+        <article><b>Article </b></article>
+        <aside><b>Aside</b></aside>
+    </div>
+        <footer><b>Footer</b></footer>
+    </div>
+</body>
+</html>
