@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .i {
+        padding-top: 5%;
+        align-content: center;
+
+        }
+      
+        p{
+           text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 120%;
+            margin-bottom: 4%;
+
+        }
+        table {
+            padding-left: 15%;
+        }
+        button {
+            padding-left: 15%;
+            background-color: white;
+            border: white;
+            font-size: 130%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="i"></div>
+    <form action="" id="form-input">
+        <p> Pembelian Tiket Bus PO.haryanto</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="nama">Nama</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nama" id="nama" required maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mail">Email</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="email" name="mail" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jam">Jam berangkatan</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="time" name="jam" id="jam" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tujuan">Tujuan berangkatan</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="tujuan" id="tujuan" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nama">Jumlah Tiket</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <select name="tiket" id="tiket">
+                        <option disabled selected>Pilih Jumlah Tiket</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" onclick="chechform()">Submit</button>
+    </form>
+    </body>
+    <script>
+  function chechform(){
+    var username = document.getElementById("nama").value;
+    var Gmail = document.getElementById("email").value;
+    var destinasi = document.getElementById("tujuan").value;
+
+  if (username == "  " || Gmail == " "|| destinasi == " "){
+    alert("FORM ADA YANG MASIH KOSONG");
+  }
+  else{
+    alert("pembelian tiket ada telah berhasil");
+  }
+  }
+</script>
+    </html>

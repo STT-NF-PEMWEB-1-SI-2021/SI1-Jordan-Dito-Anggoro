@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function cetak_gambar() {
+    const hewan= document.getElementById("hewan");
+    const gambar= document.getElementById("gambar");
+
+    if (hewan.value == "orang utan"){
+        gambar.src = "io.jpg"
+        alert("ini adalah orang utan");
+    }
+    
+    if (hewan.value == "keluarga orang utan"){
+        gambar.src = "ou.jpg"
+        alert("ini adalah keluarga orang utan");
+    }
+    if (hewan.value == "kembar monyet"){
+        gambar.src = "three-monkeys-wallpaper-preview.jpg"
+        alert("ini adalah kembar monyet");
+    }
+    if (hewan.value == "anak monyet"){
+        gambar.src = "unduhan.jpg"
+        alert("ini adalah anak monyet");
+    }
+    if (hewan.value == "monyet gaya"){
+        gambar.src = "19998488051_3fa4d10845_b.jpg"
+        alert("ini adalah monyet gaya");
+    }
+}
+    </script>
+</head>
+<body>
+    <div>
+       
+            <td>
+                <label form="hewan">Pilihlah Salah Satu Gambar</label><br>
+                <select id="hewan" onchange="cetak_gambar()">
+                    <option value="orang utan">orang utan</option>
+                    <option value="keluarga orang utan">keluarga orang utan</option>
+                    <option value="kembar monyet">anak kembar monyet</option>
+                    <option value="anak monyet">kembar monyet</option>
+                    <option value="monyet gaya">monyet gaya</option>
+                </select>
+           
+            </td>
+    </div>
+<br>
+<br>
+   <div style="width: 100px; height: 100px; border-style: solid 1px;">
+       <img src="" id="gambar">
+   </div>
+</body>
+</html>
+    
+</body>
+</html>

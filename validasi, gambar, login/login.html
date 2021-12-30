@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Praktikum login</title>
+    <script>
+         function Kirim() {
+            let name =document.getElementById("YourName").value;
+            let password =document.getElementById("Password").value;
+            let Username = "dito";
+            let Password = "dito123";
+            if (name == Username && password == password) {
+
+
+                window.alert("Login berhasil")
+    }
+    else {
+                window.alert("Login gagal")
+    }
+}     
+    </script>
+    <style>
+    .judul{
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.us { 
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.input{
+    width: 350px;
+    height: 40px;
+    padding-left: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #98dbc6;
+}
+.button{height: 30px;
+	width: 100px;
+	font-size: 20px;
+}
+    </style>
+</head>
+<body>
+
+
+    <form>
+        <div class="judul">LOGIN</div>
+        <p class="us">Username</p>
+        <input type="text" id="YourName" class="input">
+        <p class="us">Password</p>
+        <input type="text" id="Password" class="input"> <br> <br>
+        <button type="submit" onclick="Kirim()" class="button">Login</button>
+    </form>
+</body>
+</html>
